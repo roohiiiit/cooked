@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Cooked?</string>
+    <string name="wordmark">Cooked?</string>
+    <string name="welcome_headline">Hi, I\'m Zonk.</string>
+    <string name="welcome_body">Welcome to Cooked? Let\'s see how cooked you are.</string>
+    <string name="welcome_button_lets_go">Let\'s go</string>
+    <string name="zonk_content_description">Zonk, the Cooked? mascot waving</string>
+    <string name="screen_2_placeholder">Screen 2</string>
+
+    <!-- Screen 2 Onboarding -->
+    <string name="screen2_line_1">You swipe reels.</string>
+    <string name="screen2_line_2">I count every one.</string>
+    <string name="screen2_line_3">Then I put it on your home screen.</string>
+    <string name="screen2_widget_label">videos today</string>
+    <string name="button_next">Next</string>
+    <string name="button_skip">Skip</string>
+    <string name="screen2_zonk_happy_desc">Zonk happy</string>
+    <string name="screen2_zonk_count_desc">Zonk counting</string>
+    <string name="screen2_zonk_widget_desc">Zonk with widget</string>
+    <string name="screen2_phone_desc">Phone outline with swiping reels</string>
+    <string name="screen2_widget_card_desc">Home screen widget showing daily video count</string>
+
+    <!-- Screen 3 Onboarding (Pick Your Apps) -->
+    <string name="screen3_headline">Where do you get cooked?</string>
+    <string name="screen3_subheadline">Pick at least one.</string>
+    <string name="screen3_no_apps_found">No supported social apps found installed on this device.</string>
+    <string name="button_continue">Continue</string>
+    <string name="zonk_nosy_content_desc">Zonk peeking nosily over the apps</string>
+    <!-- Screen 4 Onboarding (Widget Preview & Pinning) -->
+    <string name="screen4_headline">Keep Cooked? on your screen</string>
+    <string name="screen4_subheadline">Pick a widget style to track your doomscrolls at a glance.</string>
+    <string name="screen4_tab_small">Small</string>
+    <string name="screen4_tab_large">Large</string>
+    <string name="screen4_button_add_widget">Add Widget to Home Screen</string>
+    <string name="screen4_button_skip">Skip for now</string>
+    <string name="screen4_todays_scrolls">TODAY\'S SCROLLS</string>
+    <string name="screen4_sample_count">142</string>
+    <string name="screen4_sample_total">142 Total</string>
+    <string name="screen4_widget_pinned_toast">Widget pinned to home screen</string>
+
+    <!-- Screen 5 Onboarding (Count Display Style) -->
+    <string name="screen5_headline">How loud should I be?</string>
+    <string name="screen5_badge_recommended">Recommended</string>
+    <string name="screen5_option_notification_only">Notification only</string>
+    <string name="screen5_option_notification_milestones">Notification + milestones</string>
+    <string name="screen5_option_floating_counter">Floating counter</string>
+    <string name="screen5_option_floating_counter_subtitle">Needs an extra permission</string>
+    <string name="screen5_option_hidden_stats">Hidden, stats only</string>
+    <string name="zonk_thinking_content_desc">Zonk thinking curiously with hand on chin</string>
+    <string name="screen_6_placeholder">Screen 6</string>
+
+    <!-- Screen 6 Onboarding (Accessibility Permission & Prominent Disclosure) -->
+    <string name="screen6_headline">One permission, clearly explained</string>
+    <string name="screen6_card1_title">What I read</string>
+    <string name="screen6_card1_body">Scroll events and which feed screen you’re in, only in the apps you picked.</string>
+    <string name="screen6_card2_title">What I never collect</string>
+    <string name="screen6_card2_body">Screen content, messages, passwords or photos.</string>
+    <string name="screen6_privacy_reassurance">Your counts stay on this phone. Turn this off any time in Settings.</string>
+    <string name="screen6_button_agree">I agree, continue</string>
+    <string name="screen6_button_no_thanks">No thanks</string>
+    <string name="screen6_dialog_title">Permission Required</string>
+    <string name="screen6_dialog_body">Cooked? relies on accessibility scroll events to detect when a reel or short is viewed. Without this permission, the app cannot count your scrolls.</string>
+    <string name="screen6_dialog_button">Understood</string>
+    <string name="screen6_snackbar_disabled">Accessibility service is not yet enabled.</string>
+    <string name="zonk_shield_content_desc">Zonk holding a padlock shield</string>
+    <string name="accessibility_service_description">Cooked? detects scroll gestures in selected social media apps to count viewed reels and shorts.</string>
+    <string name="screen_7_placeholder">Screen 7</string>
+
+    <!-- Screen 7 Onboarding (Notification Permission) -->
+    <string name="screen7_headline">Want a heads-up?</string>
+    <string name="screen7_subheadline">I’ll show your count in a notification.</string>
+    <string name="screen7_button_allow">Allow notifications</string>
+    <string name="screen7_button_not_now">Not now</string>
+    <string name="zonk_notification_content_desc">Zonk holding an alert notification bell with a badge</string>
+    <string name="screen_8_placeholder">Screen 8</string>
+
+    <!-- Screen 8 Onboarding (Daily Limit Selector) -->
+    <string name="screen8_headline">Set your daily ceiling</string>
+    <string name="screen8_subheadline">Cooked? will sound the alarm before you spiral.</string>
+    <string name="screen8_reels_per_day">reels per day</string>
+    <string name="screen8_status_strict">Strict discipline 🧘</string>
+    <string name="screen8_status_balanced">Healthy balance ⚖️</string>
+    <string name="screen8_status_fire">Playing with fire 🔥</string>
+    <string name="screen8_status_cooked">Deep fried behavior 💀</string>
+    <string name="screen8_button_lock_in">Lock in limit</string>
+    <string name="zonk_limit_content_desc">Zonk holding a stopwatch and marker ready to set limits</string>
+
+    <!-- Screen 9 Onboarding (Summary / Final Completion) -->
+    <string name="screen9_headline">You’re locked in.</string>
+    <string name="screen9_subheadline">Go be unreachable.</string>
+    <string name="screen9_apps_picked_label">Monitored feeds</string>
+    <string name="screen9_daily_limit_label">Daily cap</string>
+    <string name="screen9_count_style_label">Alert mode</string>
+    <string name="screen9_reels_badge_format">%1$d reels</string>
+    <string name="screen9_button_start">Start</string>
+    <string name="screen9_zonk_content_desc">Zonk refreshed and giving a thumbs up</string>
+    <string name="screen9_reels_per_day_format">%1$d reels / day</string>
+    <string name="screen9_apps_count_format">%1$d apps</string>
+    <string name="screen9_apps_none">None</string>
+    <string name="dashboard_title">Dashboard</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <!-- Dark rounded rect -->
+    <path
+        android:fillColor="#010101"
+        android:pathData="M3,0 L17,0 A3,3 0 0,1 20,3 L20,17 A3,3 0 0,1 17,20 L3,20 A3,3 0 0,1 0,17 L0,3 A3,3 0 0,1 3,0 Z" />
+    <!-- White / Cyan music note glyph -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M11,4 L13,4 C13.5,5.5 14.5,6.5 16,7 L16,9 C14.5,9 13.5,8.2 13,7.5 L13,12 C13,14.5 11,16 9,16 C7,16 5.5,14.5 5.5,12.5 C5.5,10.5 7.2,9 9.5,9.2 L9.5,11.2 C8.5,11.1 7.5,11.8 7.5,12.6 C7.5,13.4 8.2,14 9,14 C10,14 11,13.2 11,12.2 L11,4 Z" />
+</vector>
