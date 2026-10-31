@@ -32,6 +32,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.cooked.app.R
 import com.cooked.app.ui.components.CookedPrimaryButton
+import com.cooked.app.ui.components.RiveMascot
 import com.cooked.app.ui.theme.CookedBackground
 import com.cooked.app.ui.theme.CookedPrimaryText
 import com.cooked.app.ui.theme.CookedSecondaryText
@@ -91,12 +92,11 @@ fun WelcomeScreen(
                 )
             }
 
-            // Mascot
-            Image(
-                painter = painterResource(id = R.drawable.zonk_welcome),
-                contentDescription = stringResource(id = R.string.zonk_content_description),
-                contentScale = ContentScale.Fit,
-                modifier = Modifier.size(200.dp)
+            // Mascot (Rive animated vector: Hi/Wave gesture on launch -> Idle breathing loop)
+            RiveMascot(
+                resId = R.raw.mascot,
+                stateMachineName = "MascotSM",
+                modifier = Modifier.size(220.dp)
             )
         }
 

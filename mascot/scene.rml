@@ -1,0 +1,433 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="0:7" styleId="0:5" width="300" height="375" name="Mascot" id="0:2">
+        <LayoutComponentStyle name="Artboard Style" id="0:5"/>
+
+        <StateMachine name="MascotSM" id="0:7">
+            <StateMachineLayer name="Layer 1" id="0:8">
+                <AnyState x="200" y="-120"/>
+                <ExitState x="400" y="-120"/>
+                <EntryState>
+                    <StateTransition stateToId="0:14"/>
+                </EntryState>
+                <!-- Initial Wave / Hi gesture on screen open -->
+                <AnimationState x="150" y="0" animationId="0:15" id="0:14">
+                    <StateTransition stateToId="0:12" duration="300" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100"/>
+                </AnimationState>
+                <!-- Seamless idle breathing state (looping forever) -->
+                <AnimationState x="350" y="0" animationId="0:6" id="0:12"/>
+            </StateMachineLayer>
+        </StateMachine>
+
+        <!-- Wave / Hi gesture animation (plays on enter) -->
+        <LinearAnimation loopValue="oneShot" fps="60" duration="120" name="Wave" id="0:15">
+            <!-- Arm waving motion -->
+            <KeyedObject objectId="0:25">
+                <KeyedProperty property="rotation">
+                    <KeyFrameDouble value="0" frame="0" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-2.1" frame="18" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-1.65" frame="32" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-2.35" frame="46" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-1.65" frame="60" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-2.35" frame="74" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-1.8" frame="88" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-2.0" frame="100" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="0" frame="120" interpolationType="linear"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX">
+                    <KeyFrameDouble value="1" frame="0" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1.18" frame="18" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1.18" frame="100" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1" frame="120" interpolationType="linear"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY">
+                    <KeyFrameDouble value="1" frame="0" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1.18" frame="18" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1.18" frame="100" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1" frame="120" interpolationType="linear"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <!-- Cheerful head tilt during wave -->
+            <KeyedObject objectId="0:30">
+                <KeyedProperty property="rotation">
+                    <KeyFrameDouble value="0" frame="0" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="0.09" frame="20" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="0.09" frame="90" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="0" frame="115" interpolationType="linear"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+        <!-- Idle Breathing animation (looping) -->
+        <LinearAnimation loopValue="loop" fps="60" duration="210" name="Breathe" id="0:6">
+            <KeyedObject objectId="0:20">
+                <KeyedProperty property="scaleY">
+                    <KeyFrameDouble value="1" frame="0" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1.035" frame="105" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1" frame="210" interpolationType="linear"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX">
+                    <KeyFrameDouble value="1" frame="0" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1.015" frame="105" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="1" frame="210" interpolationType="linear"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:30">
+                <KeyedProperty property="y">
+                    <KeyFrameDouble value="-150" frame="0" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-152.5" frame="105" interpolationType="cubic">
+                        <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/>
+                    </KeyFrameDouble>
+                    <KeyFrameDouble value="-150" frame="210" interpolationType="linear"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+        <!-- DRAW ORDER: First declared renders in FRONT -->
+
+        <!-- 1. Body & Upper Assembly (Anchored at base 147, 306) -->
+        <Node x="147" y="306" name="BodyGroup" id="0:20">
+
+            <!-- FACE / HEAD (Pivoted above chest) -->
+            <Node x="0" y="-150" name="Head" id="0:30">
+
+                <!-- Mouth Tongue -->
+                <Shape name="Mouth Tongue">
+                    <PointsPath isClockwise="true" isClosed="true" name="Tongue Path">
+    <CubicDetachedVertex x="-10" y="61" inRotation="1.0637" inDistance="6.86" outRotation="-0.6435" outDistance="10"/>
+    <CubicDetachedVertex x="14" y="61" inRotation="-2.4981" inDistance="10" outRotation="2.0779" outDistance="6.86"/>
+    <CubicDetachedVertex x="2" y="70" inRotation="0" inDistance="4.67" outRotation="3.1416" outDistance="4.67"/>
+</PointsPath>
+                    <Fill name="Fill">
+                        <SolidColor colorValue="FFFF8A7A" name="Color"/>
+                    </Fill>
+                </Shape>
+
+                <!-- Mouth Open -->
+                <Shape name="Mouth Open">
+                    <PointsPath isClockwise="true" isClosed="true" name="Mouth Path">
+    <CubicDetachedVertex x="-21" y="41" inRotation="1.3668" inDistance="19.74" outRotation="0.5337" outDistance="17.04"/>
+    <CubicDetachedVertex x="25" y="41" inRotation="2.6452" inDistance="18.2" outRotation="1.7748" outDistance="19.74"/>
+    <CubicDetachedVertex x="2" y="70" inRotation="0" inDistance="11.33" outRotation="3.1416" outDistance="11.33"/>
+</PointsPath>
+                    <Fill name="Fill">
+                        <SolidColor colorValue="FF7A2A12" name="Color"/>
+                    </Fill>
+                </Shape>
+
+                <!-- Brows -->
+                <Shape name="Brow Left">
+                    <PointsPath isClockwise="true"  name="BrowLeft Path">
+    <CubicDetachedVertex x="-75" y="-46" inRotation="0" inDistance="0" outRotation="-0.5667" outDistance="17.38"/>
+    <CubicDetachedVertex x="-29" y="-50" inRotation="-2.7468" inDistance="17.33" outRotation="0" outDistance="0"/>
+</PointsPath>
+                    <Stroke thickness="5" cap="round" join="round" name="Stroke">
+                        <SolidColor colorValue="FFA8431A" name="Color"/>
+                    </Stroke>
+                </Shape>
+
+                <Shape name="Brow Right">
+                    <PointsPath isClockwise="true"  name="BrowRight Path">
+    <CubicDetachedVertex x="11" y="-50" inRotation="0" inDistance="0" outRotation="-0.3948" outDistance="17.33"/>
+    <CubicDetachedVertex x="57" y="-46" inRotation="-2.5749" inDistance="17.38" outRotation="0" outDistance="0"/>
+</PointsPath>
+                    <Stroke thickness="5" cap="round" join="round" name="Stroke">
+                        <SolidColor colorValue="FFA8431A" name="Color"/>
+                    </Stroke>
+                </Shape>
+
+                <!-- Eyes -->
+                <Node x="-50" y="-4" name="Eye Left">
+                    <!-- Highlights -->
+                    <Shape x="-5" y="-3" name="Highlight 1">
+                        <Ellipse width="13" height="13" originX="0.5" originY="0.5"/>
+                        <Fill name="Fill"><SolidColor colorValue="FFFFFFFF"/></Fill>
+                    </Shape>
+                    <Shape x="9" y="13" name="Highlight 2">
+                        <Ellipse width="6" height="6" originX="0.5" originY="0.5"/>
+                        <Fill name="Fill"><SolidColor colorValue="E6FFFFFF"/></Fill>
+                    </Shape>
+                    <!-- Pupil -->
+                    <Shape x="3" y="5" name="Pupil">
+                        <Ellipse width="20" height="20" originX="0.5" originY="0.5"/>
+                        <Fill name="Fill"><SolidColor colorValue="FF2B1208"/></Fill>
+                    </Shape>
+                    <!-- Iris -->
+                    <Shape x="2" y="4" name="Iris">
+                        <Ellipse width="38" height="38" originX="0.5" originY="0.5"/>
+                        <Fill name="Fill">
+                            <RadialGradient startX="-1.9" startY="-5.7" endX="24.7" endY="-5.7" name="Iris Gradient">
+                                <GradientStop colorValue="FFC9772E" position="0"/>
+                                <GradientStop colorValue="FF6B2D10" position="1"/>
+                            </RadialGradient>
+                        </Fill>
+                    </Shape>
+                    <!-- White -->
+                    <Shape x="0" y="0" name="White">
+                        <Ellipse width="60" height="60" originX="0.5" originY="0.5"/>
+                        <Fill name="Fill">
+                            <RadialGradient startX="0" startY="-3" endX="36" endY="-3" name="White Gradient">
+                                <GradientStop colorValue="FFFFFFFF" position="0.7"/>
+                                <GradientStop colorValue="FFFFF3D6" position="1"/>
+                            </RadialGradient>
+                        </Fill>
+                    </Shape>
+                </Node>
+
+                <Node x="31" y="-4" name="Eye Right">
+                    <!-- Highlights -->
+                    <Shape x="-5" y="-3" name="Highlight 1">
+                        <Ellipse width="13" height="13" originX="0.5" originY="0.5"/>
+                        <Fill name="Fill"><SolidColor colorValue="FFFFFFFF"/></Fill>
+                    </Shape>
+                    <Shape x="9" y="13" name="Highlight 2">
+                        <Ellipse width="6" height="6" originX="0.5" originY="0.5"/>
+                        <Fill name="Fill"><SolidColor colorValue="E6FFFFFF"/></Fill>
+                    </Shape>
+                    <!-- Pupil -->
+                    <Shape x="3" y="5" name="Pupil">
+                        <Ellipse width="20" height="20" originX="0.5" originY="0.5"/>
+                        <Fill name="Fill"><SolidColor colorValue="FF2B1208"/></Fill>
+                    </Shape>
+                    <!-- Iris -->
+                    <Shape x="2" y="4" name="Iris">
+                        <Ellipse width="38" height="38" originX="0.5" originY="0.5"/>
+                        <Fill name="Fill">
+                            <RadialGradient startX="-1.9" startY="-5.7" endX="24.7" endY="-5.7" name="Iris Gradient">
+                                <GradientStop colorValue="FFC9772E" position="0"/>
+                                <GradientStop colorValue="FF6B2D10" position="1"/>
+                            </RadialGradient>
+                        </Fill>
+                    </Shape>
+                    <!-- White -->
+                    <Shape x="0" y="0" name="White">
+                        <Ellipse width="60" height="60" originX="0.5" originY="0.5"/>
+                        <Fill name="Fill">
+                            <RadialGradient startX="0" startY="-3" endX="36" endY="-3" name="White Gradient">
+                                <GradientStop colorValue="FFFFFFFF" position="0.7"/>
+                                <GradientStop colorValue="FFFFF3D6" position="1"/>
+                            </RadialGradient>
+                        </Fill>
+                    </Shape>
+                </Node>
+
+                <!-- Cheeks -->
+                <Shape x="-85" y="44" name="Cheek Left">
+                    <Ellipse width="44" height="28" originX="0.5" originY="0.5"/>
+                    <Fill name="Fill">
+                        <RadialGradient startX="0" startY="0" endX="22" endY="0" name="Cheek Gradient">
+                            <GradientStop colorValue="80FF5A3C" position="0"/>
+                            <GradientStop colorValue="00FF5A3C" position="1"/>
+                        </RadialGradient>
+                    </Fill>
+                </Shape>
+
+                <Shape x="85" y="44" name="Cheek Right">
+                    <Ellipse width="44" height="28" originX="0.5" originY="0.5"/>
+                    <Fill name="Fill">
+                        <RadialGradient startX="0" startY="0" endX="22" endY="0" name="Cheek Gradient">
+                            <GradientStop colorValue="80FF5A3C" position="0"/>
+                            <GradientStop colorValue="00FF5A3C" position="1"/>
+                        </RadialGradient>
+                    </Fill>
+                </Shape>
+            </Node>
+
+            <!-- Arms -->
+            <Node name="Arms">
+                <Shape name="Arm Left">
+                    <PointsPath isClockwise="false" isClosed="true" name="ArmLeft Path">
+    <CubicDetachedVertex x="-113" y="-74" inRotation="0" inDistance="0" outRotation="2.9442" outDistance="20.4"/>
+    <CubicDetachedVertex x="-119" y="-30" inRotation="-2.4805" inDistance="22.8" outRotation="0.4182" outDistance="19.7"/>
+    <CubicDetachedVertex x="-95" y="-62" inRotation="1.249" inDistance="18.97" outRotation="0" outDistance="0"/>
+</PointsPath>
+                    <Fill name="Fill">
+                        <LinearGradient startX="-112" startY="-74" endX="-112" endY="-22" name="ArmLeft Gradient">
+                            <GradientStop colorValue="FFFFA13E" position="0"/>
+                            <GradientStop colorValue="FFF26B1F" position="1"/>
+                        </LinearGradient>
+                    </Fill>
+                </Shape>
+
+                <!-- Arm Right (Pivoted at shoulder for waving) -->
+                <Node x="97" y="-60" name="Arm Right Node" id="0:25">
+                    <Shape name="Arm Right">
+                        <PointsPath isClockwise="true" isClosed="true" name="ArmRight Path">
+    <CubicDetachedVertex x="12" y="-14" inRotation="0" inDistance="0" outRotation="0.1799" outDistance="22.36"/>
+    <CubicDetachedVertex x="22" y="30" inRotation="-0.661" inDistance="22.8" outRotation="2.7234" outDistance="19.7"/>
+    <CubicDetachedVertex x="-2" y="-2" inRotation="1.8925" inDistance="18.97" outRotation="0" outDistance="0"/>
+</PointsPath>
+                        <Fill name="Fill">
+                            <LinearGradient startX="16" startY="-14" endX="16" endY="38" name="ArmRight Gradient">
+                                <GradientStop colorValue="FFFFA13E" position="0"/>
+                                <GradientStop colorValue="FFF26B1F" position="1"/>
+                            </LinearGradient>
+                        </Fill>
+                    </Shape>
+                </Node>
+            </Node>
+
+            <!-- Body Shine -->
+            <Shape x="-47" y="-178" rotation="-0.4363323" name="Body Shine">
+                <Ellipse width="92" height="68" originX="0.5" originY="0.5"/>
+                <Fill name="Fill">
+                    <RadialGradient startX="0" startY="0" endX="46" endY="0" name="Shine Gradient">
+                        <GradientStop colorValue="8CFFFFFF" position="0"/>
+                        <GradientStop colorValue="00FFFFFF" position="1"/>
+                    </RadialGradient>
+                </Fill>
+            </Shape>
+
+            <!-- Body Shade -->
+            <Shape x="0" y="-6" name="Body Shade">
+                <Ellipse width="200" height="56" originX="0.5" originY="0.5"/>
+                <Fill name="Fill">
+                    <RadialGradient startX="0" startY="0" endX="100" endY="0" name="Shade Gradient">
+                        <GradientStop colorValue="73B53A10" position="0"/>
+                        <GradientStop colorValue="00B53A10" position="1"/>
+                    </RadialGradient>
+                </Fill>
+            </Shape>
+
+            <!-- Torso / Main Body -->
+            <Shape name="Torso">
+                <PointsPath isClockwise="false" isClosed="true" name="Body Path">
+    <CubicDetachedVertex x="0" y="-242" inRotation="0" inDistance="55" outRotation="3.1416" outDistance="55"/>
+    <CubicDetachedVertex x="-125" y="-92" inRotation="-1.5464" inDistance="82.02" outRotation="1.6053" outDistance="58.03"/>
+    <CubicDetachedVertex x="0" y="2" inRotation="3.1416" inDistance="85" outRotation="0" outDistance="85"/>
+    <CubicDetachedVertex x="125" y="-92" inRotation="1.5019" inDistance="58.14" outRotation="-1.6195" outDistance="82.1"/>
+</PointsPath>
+                <Fill name="Fill">
+                    <RadialGradient startX="-20.32" startY="-149.28" endX="170.18" endY="-149.28" name="Body Gradient">
+                        <GradientStop colorValue="FFFFA347" position="0"/>
+                        <GradientStop colorValue="FFFF7B27" position="0.55"/>
+                        <GradientStop colorValue="FFE5561A" position="1"/>
+                    </RadialGradient>
+                </Fill>
+            </Shape>
+
+            <!-- Flames -->
+            <Node name="Flames">
+                <Shape name="Flame Center">
+                    <PointsPath isClockwise="true" isClosed="true" name="FlameCenter Path">
+    <CubicDetachedVertex x="-31" y="-206" inRotation="0" inDistance="0" outRotation="-1.5708" outDistance="38"/>
+    <CubicDetachedVertex x="-1" y="-304" inRotation="1.7359" inDistance="36.5" outRotation="0.7484" outDistance="38.21"/>
+    <CubicDetachedVertex x="31" y="-206" inRotation="-1.4142" inDistance="38.47" outRotation="0" outDistance="0"/>
+</PointsPath>
+                    <Fill name="Fill">
+                        <LinearGradient startX="0" startY="-304" endX="0" endY="-206" name="FlameCenter Gradient">
+                            <GradientStop colorValue="FFFFA13E" position="0"/>
+                            <GradientStop colorValue="FFF26B1F" position="1"/>
+                        </LinearGradient>
+                    </Fill>
+                </Shape>
+
+                <Shape name="Flame Left">
+                    <PointsPath isClockwise="true" isClosed="true" name="FlameLeft Path">
+    <CubicDetachedVertex x="-79" y="-188" inRotation="0" inDistance="0" outRotation="-1.8737" outDistance="33.53"/>
+    <CubicDetachedVertex x="-55" y="-270" inRotation="2.0344" inDistance="26.83" outRotation="0.838" outDistance="26.91"/>
+    <CubicDetachedVertex x="-29" y="-188" inRotation="-1.4464" inDistance="32.25" outRotation="0" outDistance="0"/>
+</PointsPath>
+                    <Fill name="Fill">
+                        <LinearGradient startX="-54" startY="-270" endX="-54" endY="-188" name="FlameLeft Gradient">
+                            <GradientStop colorValue="FFFFA13E" position="0"/>
+                            <GradientStop colorValue="FFF26B1F" position="1"/>
+                        </LinearGradient>
+                    </Fill>
+                </Shape>
+
+                <Shape name="Flame Right">
+                    <PointsPath isClockwise="true" isClosed="true" name="FlameRight Path">
+    <CubicDetachedVertex x="29" y="-194" inRotation="0" inDistance="0" outRotation="-1.6332" outDistance="32.06"/>
+    <CubicDetachedVertex x="67" y="-264" inRotation="2.4669" inDistance="25.61" outRotation="1.0041" outDistance="26.08"/>
+    <CubicDetachedVertex x="69" y="-186" inRotation="-1.0769" inDistance="29.53" outRotation="0" outDistance="0"/>
+</PointsPath>
+                    <Fill name="Fill">
+                        <LinearGradient startX="53" startY="-264" endX="53" endY="-186" name="FlameRight Gradient">
+                            <GradientStop colorValue="FFFFA13E" position="0"/>
+                            <GradientStop colorValue="FFF26B1F" position="1"/>
+                        </LinearGradient>
+                    </Fill>
+                </Shape>
+            </Node>
+
+        </Node>
+
+        <!-- 2. Feet (Behind Body, Planted firmly on the ground) -->
+        <Node name="Feet">
+            <Shape name="Foot Left">
+                <PointsPath isClockwise="true" isClosed="true" name="FootLeft Path">
+    <CubicDetachedVertex x="70" y="284" inRotation="0" inDistance="0" outRotation="0" outDistance="0"/>
+    <CubicDetachedVertex x="140" y="284" inRotation="0" inDistance="0" outRotation="0" outDistance="0"/>
+    <CubicDetachedVertex x="140" y="322" inRotation="0" inDistance="0" outRotation="1.5708" outDistance="16"/>
+    <CubicDetachedVertex x="70" y="322" inRotation="1.5708" inDistance="16" outRotation="0" outDistance="0"/>
+</PointsPath>
+                <Fill name="Fill">
+                    <LinearGradient startX="105" startY="284" endX="105" endY="338" name="FootLeft Gradient">
+                        <GradientStop colorValue="FFF77D2C" position="0"/>
+                        <GradientStop colorValue="FFDC5A1C" position="1"/>
+                    </LinearGradient>
+                </Fill>
+            </Shape>
+
+            <Shape name="Foot Right">
+                <PointsPath isClockwise="true" isClosed="true" name="FootRight Path">
+    <CubicDetachedVertex x="152" y="284" inRotation="0" inDistance="0" outRotation="0" outDistance="0"/>
+    <CubicDetachedVertex x="218" y="284" inRotation="0" inDistance="0" outRotation="0" outDistance="0"/>
+    <CubicDetachedVertex x="218" y="322" inRotation="0" inDistance="0" outRotation="1.5708" outDistance="16"/>
+    <CubicDetachedVertex x="152" y="322" inRotation="1.5708" inDistance="16" outRotation="0" outDistance="0"/>
+</PointsPath>
+                <Fill name="Fill">
+                    <LinearGradient startX="185" startY="284" endX="185" endY="338" name="FootRight Gradient">
+                        <GradientStop colorValue="FFF77D2C" position="0"/>
+                        <GradientStop colorValue="FFDC5A1C" position="1"/>
+                    </LinearGradient>
+                </Fill>
+            </Shape>
+        </Node>
+
+    </Artboard>
+</Rive>
